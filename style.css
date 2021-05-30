@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./pictures/fon.jpg);
+  background-size: cover;
+  opacity: 0.95;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  background-color: lightskyblue;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: academy engraved let;
+}
+
+fieldset {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 500px;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+legend {
+  font-size: 40px;
+  text-align: right;
+  font-family: fantasy;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  display: inline-block;
+  width: 60%;
+  margin: 8px auto;
+  padding: 8px;
+}
+
+input[type="button"] {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 8px;
+  background-color: aquamarine;
+  box-shadow: 4px 4px 4px;
+  font-size: 20px;
+  font-family: trebuchet ms;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(38, 247, 177);
+  cursor: pointer;
+  font-family: trebuchet ms;
+}
+
+label {
+  font-size: 20px;
+  font-family: comic sans ms;
+}
+
+label[for="fgender"] {
+  width: 15%;
+}
+
+label[for="mgender"] {
+  width: 10%;
+}
+
+div > label {
+  width: 60%;
+  text-align: left;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+select {
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+  transform: scale(1.4);
+}

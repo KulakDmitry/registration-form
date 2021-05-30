@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Forms</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>New Profile</legend>
+      <form action="/to-my-site" method="POST">
+        <h1>Personal Data</h1>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="type here..." />
+        <br />
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="type here..." />
+        <br />
+        <label for="select">Select City</label>
+        <select name="city" id="city">
+          <option value="brest">Brest</option>
+          <option value="vitebsk">Vitebsk</option>
+          <option value="gomel">Gomel</option>
+          <option value="grodno">Grodno</option>
+          <option value="minsk">Minsk</option>
+        </select>
+      </form>
+
+      <form action="/to-my-site" method="post">
+        <h1>Gender</h1>
+        <label for="mgender">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="fgender">Female</label>
+        <input type="radio" name="gender" id="female" />
+      </form>
+
+      <form action="/to-my-site" method="post">
+        <h1>Authorization Data</h1>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="type here..."
+        />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="type here..."
+        />
+      </form>
+
+      <form class="checkbox" action="/to-my-site" method="post">
+        <h1>How did you know about us?</h1>
+        <div>
+          <input type="checkbox" name="chekbox" id="friends" />
+          <label for="checkbox">From friends</label>
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox" id="internet" />
+          <label for="checkbox">From the Google, Yandex...</label>
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox" id="socialnetworks" />
+          <label for="checkbox">Social networks</label>
+        </div>
+        <div>
+          <label for="checkbox">Other</label>
+          <input
+            type="text"
+            name="other"
+            id="other"
+            placeholder="type here..."
+          />
+        </div>
+      </form>
+      <input type="button" value="Submit" />
+    </fieldset>
+  </body>
+</html>
