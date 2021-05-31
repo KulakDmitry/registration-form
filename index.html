@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./style.css" />
 
     <title>Forms</title>
   </head>
   <body>
-    <fieldset>
-      <legend>New Profile</legend>
-      <form action="/to-my-site" method="POST">
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>New Profile</legend>
         <h1>Personal Data</h1>
         <label for="firstname">First Name:</label>
-        <input type="text" name="fname" id="fname" placeholder="type here..." />
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="type here..."
+          required
+        />
         <br />
         <label for="lastname">Last Name:</label>
-        <input type="text" name="lname" id="lname" placeholder="type here..." />
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="type here..."
+          required
+        />
         <br />
         <label for="select">Select City</label>
         <select name="city" id="city">
@@ -27,17 +40,15 @@
           <option value="grodno">Grodno</option>
           <option value="minsk">Minsk</option>
         </select>
-      </form>
-
-      <form action="/to-my-site" method="post">
+      </fieldset>
+      <fieldset>
         <h1>Gender</h1>
         <label for="mgender">Male</label>
-        <input type="radio" name="gender" id="male" />
+        <input type="radio" name="gender" id="male" required />
         <label for="fgender">Female</label>
-        <input type="radio" name="gender" id="female" />
-      </form>
-
-      <form action="/to-my-site" method="post">
+        <input type="radio" name="gender" id="female" required />
+      </fieldset>
+      <fieldset>
         <h1>Authorization Data</h1>
         <label for="email">Email:</label>
         <input
@@ -45,6 +56,7 @@
           name="email"
           id="email"
           placeholder="type here..."
+          required
         />
         <br />
         <label for="password">Password:</label>
@@ -53,10 +65,10 @@
           name="password"
           id="password"
           placeholder="type here..."
+          required
         />
-      </form>
-
-      <form class="checkbox" action="/to-my-site" method="post">
+      </fieldset>
+      <fieldset>
         <h1>How did you know about us?</h1>
         <div>
           <input type="checkbox" name="chekbox" id="friends" />
@@ -79,8 +91,8 @@
             placeholder="type here..."
           />
         </div>
-      </form>
-      <input type="button" value="Submit" />
-    </fieldset>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
